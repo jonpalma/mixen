@@ -1979,3 +1979,27 @@ line-height: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
+
+/* Sección de media Queries*/
+@media screen and (max-width: 980px) { 
+.btn { padding: 0 20px;}
+.aboutText h4 { font-size: 18px;}
+
+}
+
+@media screen and (max-width: 800px) { 
+.btn { margin: 0 !important; padding: 0 10px;}
+
+}
+
+@media screen and (max-width: 768px) { 
+.col-sm-3 { width: 100% !important;}
+.btn { margin: 1px !important; padding: 0 40px;}
+.container-360 { background: #fff !important;}
+}
+
+@media screen and (max-width: 360px) { 
+.col-xs-6 .btn { margin: 0 !important; padding: 0 5px !important;}
+.btn { margin: 20px !important; padding: 0 40px;}
+
+}

@@ -1,8 +1,8 @@
 <?php get_header();?>
-<!--preloader --
+<!--preloader -->
         <div class="ip-header">
             <div class="ip-logo">
-                <img class="img-responsive preloaderLogo center-block" src="img/logo-mixen.png" alt="preloader">
+                <img class="img-responsive preloaderLogo center-block" src="<?php bloginfo('template_url');?>/img/logo-mixen.png" alt="preloader">
             </div>
 
             <div class="ip-loader">
@@ -163,10 +163,10 @@
             </div>
             <div class="portfolioFilters text-center">
                 <div class="" id="filters">
-                    <button class="btn btn-default" data-filter="*" data-toggle="tooltip" data-placement="top" title="" data-original-title="18" data-scroll-reveal="enter bottom move 10px over 1s after 0.2s">All</button>
-                    <button class="btn btn-default" data-filter=".graphics" data-toggle="tooltip" data-placement="top" title="" data-original-title="4" data-scroll-reveal="enter bottom move 10px over 1s after 0.3s">Diseño Web</button>
-                    <button class="btn btn-default" data-filter=".video" data-toggle="tooltip" data-placement="top" title="" data-original-title="5" data-scroll-reveal="enter bottom move 10px over 1s after 0.5s">Comunicación</button>
-                    <button class="btn btn-default" data-filter=".mix" data-toggle="tooltip" data-placement="top" title="" data-original-title="6" data-scroll-reveal="enter bottom move 10px over 1s after 0.6s">App/Software</button>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter="*" data-toggle="tooltip" data-placement="top" title="" data-original-title="18" data-scroll-reveal="enter bottom move 10px over 1s after 0.2s">All</button></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".graphics" data-toggle="tooltip" data-placement="top" title="" data-original-title="4" data-scroll-reveal="enter bottom move 10px over 1s after 0.3s">Diseño Web</button></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".video" data-toggle="tooltip" data-placement="top" title="" data-original-title="5" data-scroll-reveal="enter bottom move 10px over 1s after 0.5s">Comunicación</button></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".mix" data-toggle="tooltip" data-placement="top" title="" data-original-title="6" data-scroll-reveal="enter bottom move 10px over 1s after 0.6s">App/Software</button></div>
                 </div>
             </div>
             <div class="gallery js-isotope" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer" } }'>
@@ -310,7 +310,7 @@
         <!--/* contact SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="contact">
-            <div class="container">
+            <div class="container container-360">
                 <!--header-->
                 <div class="row sectionIntro">
                     <div class="col-md-8 col-md-offset-2 text-center">

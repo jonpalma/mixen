@@ -7,9 +7,12 @@
             <div class="container">
                 <div class="row sectionIntro">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h2 data-scroll-reveal="enter top move 10px over 1s after 0.2s">
-                            <span>Blog</span>
-                        </h2>
+                        <h3 data-scroll-reveal="enter top move 10px over 1s after 0.2s">
+                            <span>
+                                <?php echo $wp_query->found_posts; ?> <?php _e( 'Search Results Found For', 'locale' ); ?>: "<?php the_search_query(); ?>"
+                            </span>
+                        </h3>
+
                     </div>
                 </div>
             </div>

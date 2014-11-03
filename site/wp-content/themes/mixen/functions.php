@@ -4,6 +4,14 @@ register_nav_menus( array(
 	'menu_blog'  => 'Menu Superior Blog'
 	));
 
+//Filters
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="btn btn-default btn-black"';
+}
+
 //Agregar thumbs para los post
 add_theme_support('post-thumbnails');
 add_image_size('list_articles_thumbs', 400,267, true);
@@ -29,6 +37,16 @@ $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
 $excerpt = $excerpt.' [ ... ]';
 return $excerpt;
 }
+
+//Search in blog
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('cat','3');
+    }
+    return $query;
+}
+ 
+add_filter('pre_get_posts','SearchFilter');
 
 //Title not empty
 add_filter( 'wp_title', 'baw_hack_wp_title_for_home' );
