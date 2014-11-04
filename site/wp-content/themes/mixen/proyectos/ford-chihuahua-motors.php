@@ -14,7 +14,7 @@
         <section id="singlePageIntro">
             <div class="container">
                 <div class="row text-center">
-                    <h1>Ford Chihuahua Motors</h1>
+                    <h1>Ford Chihuahua Motors Prueba</h1>
                     <p>Brading / Diseño Web / Identidad / Software</p>
                     <div class="clearfix"></div>
                 </div>
@@ -54,15 +54,16 @@
                     </div>
                     <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-12">
-                            <img src="<?php bloginfo('template_url')?>/img/background1.jpg" alt="single project Info" class="img-responsive center-block">
+
+                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/logo-mixen.png" alt="single project Info" class="img-responsive center-block">
                         </div>
                     </div>
                     <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-6">
-                            <img src="<?php bloginfo('template_url')?>/img/background1.jpg" alt="single project Info" class="img-responsive center-block">
+                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/logo-mixen.png" alt="single project Info" class="img-responsive center-block">
                         </div>
                         <div class="col-md-6">
-                            <img src="<?php bloginfo('template_url')?>/img/background1.jpg" alt="single project Info" class="img-responsive center-block">
+                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/logo-mixen.png" alt="single project Info" class="img-responsive center-block">
                         </div>
                     </div>
                 </div>

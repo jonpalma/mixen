@@ -1,5 +1,5 @@
 <?php get_header();?>
-<!--preloader -->
+<!--preloader --
         <div class="ip-header">
             <div class="ip-logo">
                 <img class="img-responsive preloaderLogo center-block" src="<?php bloginfo('template_url');?>/img/logo-mixen.png" alt="preloader">
@@ -163,21 +163,22 @@
             </div>
             <div class="portfolioFilters text-center">
                 <div class="" id="filters">
-                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter="*" data-toggle="tooltip" data-placement="top" title="" data-original-title="18" data-scroll-reveal="enter bottom move 10px over 1s after 0.2s">All</button></div>
-                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".graphics" data-toggle="tooltip" data-placement="top" title="" data-original-title="4" data-scroll-reveal="enter bottom move 10px over 1s after 0.3s">Diseño Web</button></div>
-                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".video" data-toggle="tooltip" data-placement="top" title="" data-original-title="5" data-scroll-reveal="enter bottom move 10px over 1s after 0.5s">Comunicación</button></div>
-                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".mix" data-toggle="tooltip" data-placement="top" title="" data-original-title="6" data-scroll-reveal="enter bottom move 10px over 1s after 0.6s">App/Software</button></div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"><button class="btn btn-default" data-filter="*" data-toggle="tooltip" data-placement="top" title="" data-original-title="18" data-scroll-reveal="enter bottom move 10px over 1s after 0.2s">All</button></div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"><button class="btn btn-default" data-filter=".web" data-toggle="tooltip" data-placement="top" title="" data-original-title="4" data-scroll-reveal="enter bottom move 10px over 1s after 0.3s">Diseño Web</button></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".comunicacion" data-toggle="tooltip" data-placement="top" title="" data-original-title="5" data-scroll-reveal="enter bottom move 10px over 1s after 0.5s">Comunicación</button></div>
+                    <div class="col-md-2 col-sm-2 col-xs-12"><button class="btn btn-default" data-filter=".fotografia" data-toggle="tooltip" data-placement="top" title="" data-original-title="6" data-scroll-reveal="enter bottom move 10px over 1s after 0.6s">Fotografía</button></div>
+                    <div class="col-md-3 col-sm-3 col-xs-12"><button class="btn btn-default" data-filter=".software" data-toggle="tooltip" data-placement="top" title="" data-original-title="6" data-scroll-reveal="enter bottom move 10px over 1s after 0.6s">App/Software</button></div>
                 </div>
             </div>
-            <div class="gallery js-isotope" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer" } }'>
+            <div class="gallery js-isotope" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer-four-columns" } }'>
                 <!--grid sizer for columns to be used in the data-isotope-options-->
-                <div class="grid-sizer"></div>
+                <div class="grid-sizer-four-columns"></div>
                 <!--item -->
-                <div class="gallery-inner graphics">
+                <div class="gallery-inner web comunicacion software">
                     <!-- caption -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
-                            <a id="trigger-overlay" class="overlay-ajax" href="single-project.html" data-toggle="modal" >
+                            <a id="trigger-overlay" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/ford-chihuahua-motors.php" data-toggle="modal" >
                                 <div class="caption-heading">
                                     <p>Marketing / Web / Software / Redes Sociales</p>
                                     <h4>Ford Chihuahua Motors</h4>
@@ -191,11 +192,11 @@
                 </div>
                 <!--end item -->
                 <!--item -->
-                <div class="gallery-inner video">
+                <div class="gallery-inner web comunicacion software">
                     <!-- caption -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
-                            <a id="trigger-overlay-two" class="overlay-ajax" href="single-project.html" data-toggle="modal" >
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/grupo-bafar.php" data-toggle="modal" >
                                 <div class="caption-heading">
                                     <p>Web / Software</p>
                                     <h4>Grupo Bafar</h4>
@@ -209,13 +210,13 @@
                 </div>
                 <!--end item -->
                 <!--item -->
-                <div class="gallery-inner mix">
+                <div class="gallery-inner web software">
                     <!-- caption -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
-                            <a id="trigger-overlay-four" class="overlay-ajax" href="single-project.html" data-toggle="modal">
+                            <a id="trigger-overlay-four" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/isad.php" data-toggle="modal">
                                 <div class="caption-heading">
-                                    <p>Graphics Mix</p>
+                                    <p>Estrategia Digital / Web</p>
                                     <h4>ISAD</h4>
                                     <div class="btn btn-default">Ver más...</div>
                                 </div>
@@ -228,13 +229,13 @@
                 <!--end item -->
 
                 <!--item -->
-                <div class="gallery-inner video">
+                <div class="gallery-inner web software">
                     <!-- caption -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
-                            <a id="trigger-overlay-six" class="overlay-ajax" href="single-project.html" data-toggle="modal" >
+                            <a id="trigger-overlay-six" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/send-now.php" data-toggle="modal" >
                                 <div class="caption-heading">
-                                    <p>Mixed Mix</p>
+                                    <p>Web / Software</p>
                                     <h4>Send Now</h4>
                                     <div class="btn btn-default">Ver más...</div>
                                 </div>
@@ -246,13 +247,13 @@
                 </div>
                 <!--end item -->
                 <!--item -->
-                <div class="gallery-inner graphics">
+                <div class="gallery-inner web fotografia">
                     <!-- caption -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
-                            <a id="trigger-overlay-seven" class="overlay-ajax" href="single-project.html" data-toggle="modal" >
+                            <a id="trigger-overlay-seven" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/sapisa.php" data-toggle="modal" >
                                 <div class="caption-heading">
-                                    <p>Graphics / Design</p>
+                                    <p>Web / Fotografía</p>
                                     <h4>SAPISA</h4>
                                     <div class="btn btn-default">Ver más...</div>
                                 </div>
@@ -264,13 +265,13 @@
                 </div>
                 <!--end item -->
                 <!--item -->
-                <div class="gallery-inner graphics">
+                <div class="gallery-inner web fotografia">
                     <!-- caption -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
-                            <a id="trigger-overlay" class="overlay-ajax" href="single-project.html" data-toggle="modal" >
+                            <a id="trigger-overlay" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/pinturas-mas-colors.php" data-toggle="modal" >
                                 <div class="caption-heading">
-                                    <p>Graphics / Motion</p>
+                                    <p>Web / Fotografía</p>
                                     <h4>Pinturas MasColors</h4>
                                     <div class="btn btn-default">Ver más...</div>
                                 </div>
@@ -279,6 +280,204 @@
                     </div>
                     <!-- end caption -->
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/pinturas-mas-colors.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web comunicacion">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/menusandplaces.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Comunicación / Software</p>
+                                    <h4>Menus And Places</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/menusandplaces.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/perchisa.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web</p>
+                                    <h4>Perchisa</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/perchisa.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web fotografia">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/qam.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Fotografía</p>
+                                    <h4>QAM</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/qam.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/real-skin-care.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web</p>
+                                    <h4>Real Skin Care</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/real-skin-care.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web comunicacion software fotografia">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/sonar-bit.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Comunicación / Fotografía / Software</p>
+                                    <h4>Sonar Bit</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/sonar-bit.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web fotografia">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/rohi.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Fotografía</p>
+                                    <h4>RoHi</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/rohi.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web fotografia">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/her-secret-dream.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Fotografía</p>
+                                    <h4>Her Secret Dream</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/her-secret-dream.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web comunicacion">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/expogan.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Comunicacón</p>
+                                    <h4>Expogan 2012</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/expogan.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web comunicacion">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/abrasive-solutions.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Comunicación</p>
+                                    <h4>Abrasive Solutions</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/abrasive-solutions.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web fotografia">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/refaccionaria-octavio-vazquez.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Fotografía</p>
+                                    <h4>Refacccionaria Octavio Vázquez</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/refaccionaria-octavio-vazquez.jpg">
+                </div>
+                <!--end item -->
+                <!--item -->
+                <div class="gallery-inner web fotografia">
+                    <!-- caption -->
+                    <div class="caption text-center ">
+                        <div class="captionWrapper valign">
+                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/hair-studio.php" data-toggle="modal" >
+                                <div class="caption-heading">
+                                    <p>Web / Fotografía</p>
+                                    <h4>Hair Studio</h4>
+                                    <div class="btn btn-default">Ver más...</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end caption -->
+                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/hair-studio.jpg">
                 </div>
                 <!--end item -->
             </div>
