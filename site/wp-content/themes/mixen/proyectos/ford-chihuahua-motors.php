@@ -14,8 +14,8 @@
         <section id="singlePageIntro">
             <div class="container">
                 <div class="row text-center">
-                    <h1>Ford Chihuahua Motors Prueba</h1>
-                    <p>Brading / Diseño Web / Identidad / Software</p>
+                    <h1>Ford Chihuahua Motors</h1>
+                    <p>Estrategia Digital / Desarrollo Web & Software / Seguimiento de Ordenes</p>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -30,9 +30,7 @@
                             <!-- article-->
                             <div id="post">
                                 <div id="caption">
-                                    <p class="excerpt">Desarrollo Web / Posicionamiento SEO / Sesión Fotográfica / Catálogo para Ventas.
-                                    En este proyecto se desarrolló una estrategia digital que consta de secciones especializadas que muestran al usuario cierta cantidad de productos para potencializar el pedido de cualquier tipo de cotización. </p>
-                                    <p class="excerpt"> Doubtful two bed way pleasure confined followed. Shew up ye away no eyes life or were this. Perfectly did suspicion daughters but his intention. Started on society an brought it explain. Position two saw greatest stronger old. Pianoforte if at simplicity do estimating. </p>
+                                    <p class="excerpt">El manejo de la comunicación digital de Chihuahua Motors es clave para proyectar una imagen eficiente, funcional y actual de la marca que va a la par con las nuevas tecnologías de información. </p>
                                 </div>
                             </div>
                             <!-- end article-->
@@ -53,17 +51,11 @@
                         <!--  end info -->
                     </div>
                     <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
-                        <div class="col-md-12">
-
-                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/logo-mixen.png" alt="single project Info" class="img-responsive center-block">
-                        </div>
-                    </div>
-                    <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-6">
-                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/logo-mixen.png" alt="single project Info" class="img-responsive center-block">
+                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/background1.jpg" alt="texto" class="img-responsive center-block">
                         </div>
                         <div class="col-md-6">
-                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/logo-mixen.png" alt="single project Info" class="img-responsive center-block">
+                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/background1.jpg" alt="texto" class="img-responsive center-block">
                         </div>
                     </div>
                 </div>
