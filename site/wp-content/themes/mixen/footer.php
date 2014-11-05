@@ -6,10 +6,10 @@
                 </div>
 
                    <ul class="footerSocialIcons">
-                        <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance fa-2x"></i></a></li>
+                        <li><a href="https://facebook.com/mixen.mx?ref=hl"><i class="fa fa-facebook fa-2x"></i></a></li>
+                        <li><a href="https://twitter.com/MixenMx"><i class="fa fa-twitter fa-2x"></i></a></li>
+                        <li><a href="http://instagram.com/mixenmx"><i class="fa fa-instagram fa-2x"></i></a></li>
+                        <li><a href="https://www.behance.net/MixenMx"><i class="fa fa-behance fa-2x"></i></a></li>
                     </ul>
                     <p class="bold">Todos los derechos reservados. </p> <p>Agencia Mixen.</p>
                 </div>

@@ -1,11 +1,5 @@
 (function() {
-    var triggerBttn = document.getElementById( 'trigger-overlay' ),
-        triggerBttnTwo = document.getElementById( 'trigger-overlay-two' ),
-        triggerBttnThree = document.getElementById( 'trigger-overlay-three' ),
-        triggerBttnFour = document.getElementById( 'trigger-overlay-four' ),
-        triggerBttnFive = document.getElementById( 'trigger-overlay-five' ),
-        triggerBttnSix = document.getElementById( 'trigger-overlay-six' ),
-        triggerBttnSeven = document.getElementById( 'trigger-overlay-seven' ),
+    var triggerBttn = document.getElementsByClassName( 'trigger-overlay' );
 
         overlay = document.querySelector( 'div.overlay' ),
         closeBttn = overlay.querySelector( 'a.overlay-close' );
@@ -66,14 +60,10 @@
 
 
     closeBttn.addEventListener( 'click', toggleOverlay );
-
-    triggerBttn.addEventListener( 'click', toggleOverlay );
-    triggerBttnTwo.addEventListener( 'click', toggleOverlay );
-    triggerBttnThree.addEventListener( 'click', toggleOverlay );
-    triggerBttnFour.addEventListener( 'click', toggleOverlay );
-    triggerBttnFive.addEventListener( 'click', toggleOverlay );
-    triggerBttnSix.addEventListener( 'click', toggleOverlay );
-    triggerBttnSeven.addEventListener( 'click', toggleOverlay );
+    for( i in triggerBttn) {
+        triggerBttn[i].addEventListener( 'click', toggleOverlay );
+    }
+    
 
 
     return false;

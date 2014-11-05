@@ -172,25 +172,47 @@
             <div class="gallery js-isotope" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer-four-columns" } }'>
                 <div class="grid-sizer-four-columns"></div>
                 <!--CHIHUAHUA MOTORS -->
-                <div class="gallery-inner web comunicacion software">
+                <?php query_posts(array('order' => 'ASC', 'post_type' => 'page')); ?>
+
+               <?php while ( have_posts() ) : the_post(); ?>
+                <?php
+                    $classes = '';
+                    if(CFS()->get('web')) {
+                        $classes .= ' web';
+                    }
+                    if(CFS()->get('comunicacion')) {
+                        $classes .= ' comunicacion';
+                    }
+                    if(CFS()->get('fotografia')) {
+                        $classes .= ' fotografia';
+                    }
+                    if(CFS()->get('software')) {
+                        $classes .= ' software';
+                    }
+                ?>
+                <div class="gallery-inner <?php echo $classes;?>">
+                    <!-- caption -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
-                            <a id="trigger-overlay" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/ford-chihuahua-motors.php" data-toggle="modal" >
+                            <a class="overlay-ajax trigger-overlay" href="<?php the_permalink();?>" data-toggle="modal" >
                                 <div class="caption-heading">
-                                    <p>Marketing / Web / Software / Redes Sociales</p>
-                                    <h4>Ford Chihuahua Motors</h4>
+                                    <p><?php echo CFS()->get('tags'); ?></p>
+                                    <h4><?php the_title(); ?></h4>
                                     <div class="btn btn-default">Ver más...</div>
                                 </div>
                             </a>
                         </div>
                     </div>
                     <!-- end caption -->
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/ford-chihuahua-motors.jpg">
+                    <?php if (has_post_thumbnail() ) { the_post_thumbnail( 'list_page_thumbs', array( 'class' => 'galleryImage') ); }?></a>
                 </div>
+                <?php endwhile; ?>
+                <?php wp_reset_query(); ?>
+                
                 <!--end CHIHUAHUA MOTORS -->
-                <!-- BAFAR -->
+                <!-- BAFAR --
                 <div class="gallery-inner web comunicacion software">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/grupo-bafar.php" data-toggle="modal" >
@@ -204,10 +226,10 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/grupo-bafar.jpg">
                 </div>
-                <!--end BAFAR -->
-                <!--ISAD -->
+                <!--end BAFAR --
+                <!--ISAD --
                 <div class="gallery-inner web software">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-three" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/isad.php" data-toggle="modal">
@@ -221,11 +243,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/isad.jpg">
                 </div>
-                <!--end ISAD -->
+                <!--end ISAD --
 
-                <!--SEND NOW -->
+                <!--SEND NOW --
                 <div class="gallery-inner web software">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-four" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/send-now.php" data-toggle="modal" >
@@ -239,11 +261,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/send-now.jpg">
                 </div>
-                <!--end SEND NOW -->
+                <!--end SEND NOW --
 
-                <!--SAPISA -->
+                <!--SAPISA --
                 <div class="gallery-inner web fotografia">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-five" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/sapisa.php" data-toggle="modal" >
@@ -257,11 +279,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/sapisa.jpg">
                 </div>
-                <!--end SAPISA -->
+                <!--end SAPISA --
 
-                <!--MAS COLORS -->
+                <!--MAS COLORS --
                 <div class="gallery-inner web fotografia">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-six" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/pinturas-mas-colors.php" data-toggle="modal" >
@@ -275,11 +297,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/pinturas-mas-colors.jpg">
                 </div>
-                <!--end MAS COLORS -->
+                <!--end MAS COLORS --
 
-                <!--MENUS AND PLACES -->
+                <!--MENUS AND PLACES --
                 <div class="gallery-inner web comunicacion">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-seven" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/menusandplaces.php" data-toggle="modal" >
@@ -293,9 +315,9 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/menusandplaces.jpg">
                 </div>
-                <!--end MENUS AND PLACES -->
+                <!--end MENUS AND PLACES --
 
-                <!--SAFLOSA -->
+                <!--SAFLOSA --
                 <div class="gallery-inner web">
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
@@ -310,9 +332,9 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/real-skin-care.jpg">
                 </div>
-                <!--end SAFLOSA -->
+                <!--end SAFLOSA --
 
-                <!--ROVSA -->
+                <!--ROVSA --
                 <div class="gallery-inner web fotografia">
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
@@ -327,11 +349,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/refaccionaria-octavio-vazquez.jpg">
                 </div>
-                <!--end ROVSA -->
+                <!--end ROVSA --
 
-                <!--QAM -->
+                <!--QAM --
                 <div class="gallery-inner web fotografia">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-ten" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/qam.php" data-toggle="modal" >
@@ -345,11 +367,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/qam.jpg">
                 </div>
-                <!--end QAM -->
+                <!--end QAM --
 
-                <!--PERCHISA -->
+                <!--PERCHISA --
                 <div class="gallery-inner web">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-eleven" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/perchisa.php" data-toggle="modal" >
@@ -363,11 +385,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/perchisa.jpg">
                 </div>
-                <!--end PERCHISA -->
+                <!--end PERCHISA --
 
-                <!--SONAR BIT -->
+                <!--SONAR BIT --
                 <div class="gallery-inner web comunicacion software fotografia">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-twelve" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/sonar-bit.php" data-toggle="modal" >
@@ -381,11 +403,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/sonar-bit.jpg">
                 </div>
-                <!--end SONAR BIT -->
+                <!--end SONAR BIT --
 
-                <!--EXPOGAN 2012 -->
+                <!--EXPOGAN 2012 --
                 <div class="gallery-inner web comunicacion">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-therteen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/expogan.php" data-toggle="modal" >
@@ -399,11 +421,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/expogan.jpg">
                 </div>
-                <!--end EXPOGAN 2012 -->
+                <!--end EXPOGAN 2012 --
 
-                <!--ROHI -->
+                <!--ROHI --
                 <div class="gallery-inner web fotografia">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-fourteen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/rohi.php" data-toggle="modal" >
@@ -417,11 +439,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/rohi.jpg">
                 </div>
-                <!--end ROHI -->
+                <!--end ROHI --
 
-                <!--HER SECRET DREAM -->
+                <!--HER SECRET DREAM --
                 <div class="gallery-inner web fotografia">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-fifteen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/her-secret-dream.php" data-toggle="modal" >
@@ -435,9 +457,9 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/her-secret-dream.jpg">
                 </div>
-                <!--end HER SECRET DREAM -->
+                <!--end HER SECRET DREAM --
 
-                 <!--HAIR STUDIO -->
+                 <!--HAIR STUDIO --
                 <div class="gallery-inner web fotografia">
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
@@ -452,11 +474,11 @@
                     </div>
                     <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/hair-studio.jpg">
                 </div>
-                <!--end HAIR STUDIO -->
+                <!--end HAIR STUDIO --
                 
-                <!--ABRASIVE SOLUTIONS -->
+                <!--ABRASIVE SOLUTIONS --
                 <div class="gallery-inner web comunicacion">
-                    <!-- caption -->
+                    <!-- caption --
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a id="trigger-overlay-seventeen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/abrasive-solutions.php" data-toggle="modal" >
@@ -545,9 +567,9 @@
                             </div>
                         </div>
                         <ul class="socialContact">
-                            <li><a class="fa fa-facebook" href="#"></a></li>
-                            <li><a class="fa fa-twitter" href="#"></a></li>
-                            <li><a class="fa fa-google-plus" href="#"></a></li>
+                            <li><a class="fa fa-facebook" href="https://facebook.com/mixen.mx?ref=hl"></a></li>
+                            <li><a class="fa fa-twitter" href="https://twitter.com/MixenMx"></a></li>
+                            <li><a class="fa fa-google-plus" href="https://plus.google.com/u/0/106285564014943617967/about"></a></li>
                         </ul>
                     </div>
                             <div class="col-md-6 col-sm-6 col-xs-12 text-center" data-scroll-reveal="enter right move over 1s after 0.2s">

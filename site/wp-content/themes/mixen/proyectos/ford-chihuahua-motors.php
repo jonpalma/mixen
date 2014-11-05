@@ -14,8 +14,9 @@
         <section id="singlePageIntro">
             <div class="container">
                 <div class="row text-center">
-                    <h1>Ford Chihuahua Motors</h1>
-                    <p>Estrategia Digital / Desarrollo Web & Software / Seguimiento de Ordenes</p>
+                    <h1><?php the_title(); ?></h1>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <p><?php echo CFS()->get('tags'); ?></p>
                     <div class="clearfix"></div>
                 </div>
             </div>
@@ -30,7 +31,7 @@
                             <!-- article-->
                             <div id="post">
                                 <div id="caption">
-                                    <p class="excerpt">El manejo de la comunicación digital de Chihuahua Motors es clave para proyectar una imagen eficiente, funcional y actual de la marca que va a la par con las nuevas tecnologías de información. </p>
+                                    <div class="excerpt"><?php the_content();?></div>
                                 </div>
                             </div>
                             <!-- end article-->
@@ -40,10 +41,10 @@
                             <div class="singleProjectInfo">
                                 <ul class="list">
                                     <li>
-                                        <i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;<p class="bold">30 Octubre 2014</p>
+                                        <i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;<p class="bold"><?php echo CFS()->get('fecha_de_inicio'); ?></p>
                                     </li>
                                     <li>
-                                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;Cliente: <p class="bold">Microsoft</p>
+                                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;Cliente: <p class="bold"><?php echo CFS()->get('cliente'); ?></p>
                                     </li>
                                 </ul>
                             </div>
@@ -52,13 +53,16 @@
                     </div>
                     <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-6">
-                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/background1.jpg" alt="texto" class="img-responsive center-block">
+                            <img src="<?php echo CFS()->get('imagen1'); ?>" alt="texto" class="img-responsive center-block">
                         </div>
                         <div class="col-md-6">
-                            <img src="http://localhost/mixen/site/wp-content/themes/mixen/img/background1.jpg" alt="texto" class="img-responsive center-block">
+                            <img src="<?php echo CFS()->get('imagen2'); ?>" alt="texto" class="img-responsive center-block">
                         </div>
                     </div>
                 </div>
+                <?php endwhile; else: ?>
+                    <h1>No se encontraron articulos</h1>
+                <?php endif ?>
                 <!--end content-->
             </div> <!-- /container -->
         </section>
