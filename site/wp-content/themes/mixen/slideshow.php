@@ -28,6 +28,7 @@
                                 <?php endwhile; else: ?>
                                 <h1>No se encontraron articulos</h1>
                                 <?php endif; ?>
+                                <?php wp_reset_query(); ?>
                         </div>
                     </div>
                 </div>

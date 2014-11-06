@@ -172,9 +172,9 @@
             <div class="gallery js-isotope" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer-four-columns" } }'>
                 <div class="grid-sizer-four-columns"></div>
                 <!--CHIHUAHUA MOTORS -->
-                <?php query_posts(array('order' => 'ASC', 'post_type' => 'page')); ?>
+                <?php query_posts(array('showposts' => '-1', 'order' => 'ASC', 'post_type' => 'page')); ?>
 
-               <?php while ( have_posts() ) : the_post(); ?>
+               <?php if( have_posts()) : while ( have_posts() ) : the_post(); ?>
                 <?php
                     $classes = '';
                     if(CFS()->get('web')) {
@@ -207,6 +207,7 @@
                     <?php if (has_post_thumbnail() ) { the_post_thumbnail( 'list_page_thumbs', array( 'class' => 'galleryImage') ); }?></a>
                 </div>
                 <?php endwhile; ?>
+                <?php endif; ?>
                 <?php wp_reset_query(); ?>
                 
                 <!--end CHIHUAHUA MOTORS -->
