@@ -161,6 +161,10 @@ section .container{
 
 }
 
+.border {
+    border: 1px solid #ccc;
+}
+
 /*parallax letters*/
 
 
@@ -1210,6 +1214,7 @@ p.bold{
     color:#c8c8c8;
     font-style:italic;
     font-size:10px;
+    text-align: left;
 }
 .review h4{
     color:#fff;
@@ -1632,6 +1637,7 @@ line-height: 24px;
 
 #blogIntro-info p {
     color: #fff;
+    text-align: left;
 }
 
 

@@ -31,10 +31,13 @@
                             <div class="singleProjectInfo">
                                 <ul class="list">
                                     <li>
-                                        <i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;<p class="bold"><?php echo CFS()->get('fecha_de_inicio'); ?></p>
+                                        <i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp;Fecha: <p class="bold"><?php echo CFS()->get('fecha_de_inicio'); ?></p>
                                     </li>
                                     <li>
                                         <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;Cliente: <p class="bold"><?php echo CFS()->get('cliente'); ?></p>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp;&nbsp;Sitio Web: <p class="bold"><?php echo CFS()->get('sitio'); ?></p>
                                     </li>
                                 </ul>
                             </div>
@@ -43,18 +46,18 @@
                     </div>
                     <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-6">
-                            <img src="<?php echo CFS()->get('imagen1'); ?>" alt="texto" class="img-responsive center-block">
+                            <img src="<?php echo CFS()->get('imagen1'); ?>" alt="" class="img-responsive center-block border">
                         </div>
                         <div class="col-md-6">
-                            <img src="<?php echo CFS()->get('imagen2'); ?>" alt="texto" class="img-responsive center-block">
+                            <img src="<?php echo CFS()->get('imagen2'); ?>" alt="" class="img-responsive center-block border">
                         </div>
                     </div>
                     <div class="row singleImageWrapper" data-scroll-reveal="enter top move 30px over 1s after 0.2s">
                         <div class="col-md-6">
-                            <img src="<?php echo CFS()->get('imagen3'); ?>" alt="texto" class="img-responsive center-block">
+                            <img src="<?php echo CFS()->get('imagen3'); ?>" alt="" class="img-responsive center-block border">
                         </div>
                         <div class="col-md-6">
-                            <img src="<?php echo CFS()->get('imagen4'); ?>" alt="texto" class="img-responsive center-block">
+                            <img src="<?php echo CFS()->get('imagen4'); ?>" alt="" class="img-responsive center-block border">
                         </div>
                     </div>
                 </div>

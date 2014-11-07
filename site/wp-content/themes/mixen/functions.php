@@ -14,7 +14,7 @@ function posts_link_attributes() {
 
 //Agregar thumbs para los post
 add_theme_support('post-thumbnails');
-add_image_size('list_articles_thumbs', 400,267, true);
+add_image_size('list_articles_thumbs', 788,526, true);
 
 //Sidebar
 register_sidebar( array(

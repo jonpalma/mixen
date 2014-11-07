@@ -14,7 +14,6 @@
         </div>
         <!--end preloader-->
 
-        <!--OVERLAY FOR THE PORTFOLIO MENU // DONT' DELETE IF YOU PLAN TO USE THIS OPTION-->
         <div class="container overlay overlay-slidedown">
             <div class="row">
                 <div class="overlay-section"></div>
@@ -26,7 +25,6 @@
                 </div>
             </div>
         </div>
-        <!--end OVERLAY FOR THE PORTFOLIO MENU // DONT' DELETE IF YOU PLAN TO USE THIS OPTION-->
 
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <!--/* Intro  */-->
@@ -171,7 +169,7 @@
             </div>
             <div class="gallery js-isotope" data-isotope-options='{ "itemSelector": ".gallery-inner", "masonry": { "columnWidth": ".grid-sizer-four-columns" } }'>
                 <div class="grid-sizer-four-columns"></div>
-                <!--CHIHUAHUA MOTORS -->
+                <!--Project by mixen -->
                 <?php query_posts(array('order' => 'ASC', 'post_type' => 'page')); ?>
 
                <?php while ( have_posts() ) : the_post(); ?>
@@ -191,7 +189,7 @@
                     }
                 ?>
                 <div class="gallery-inner <?php echo $classes;?>">
-                    <!-- caption -->
+                    <!-- project -->
                     <div class="caption text-center ">
                         <div class="captionWrapper valign">
                             <a class="overlay-ajax trigger-overlay" href="<?php the_permalink();?>" data-toggle="modal" >
@@ -203,296 +201,12 @@
                             </a>
                         </div>
                     </div>
-                    <!-- end caption -->
+                    <!-- end project -->
                     <?php if (has_post_thumbnail() ) { the_post_thumbnail( 'list_page_thumbs', array( 'class' => 'galleryImage') ); }?></a>
                 </div>
                 <?php endwhile; ?>
                 <?php wp_reset_query(); ?>
                 
-                <!--end CHIHUAHUA MOTORS -->
-                <!-- BAFAR --
-                <div class="gallery-inner web comunicacion software">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-two" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/grupo-bafar.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Software</p>
-                                    <h4>Grupo Bafar</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/grupo-bafar.jpg">
-                </div>
-                <!--end BAFAR --
-                <!--ISAD --
-                <div class="gallery-inner web software">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-three" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/isad.php" data-toggle="modal">
-                                <div class="caption-heading">
-                                    <p>Estrategia Digital / Web</p>
-                                    <h4>ISAD</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/isad.jpg">
-                </div>
-                <!--end ISAD --
-
-                <!--SEND NOW --
-                <div class="gallery-inner web software">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-four" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/send-now.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Software</p>
-                                    <h4>Send Now</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/send-now.jpg">
-                </div>
-                <!--end SEND NOW --
-
-                <!--SAPISA --
-                <div class="gallery-inner web fotografia">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-five" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/sapisa.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Fotografía</p>
-                                    <h4>SAPISA</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/sapisa.jpg">
-                </div>
-                <!--end SAPISA --
-
-                <!--MAS COLORS --
-                <div class="gallery-inner web fotografia">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-six" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/pinturas-mas-colors.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Fotografía</p>
-                                    <h4>Pinturas MasColors</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/pinturas-mas-colors.jpg">
-                </div>
-                <!--end MAS COLORS --
-
-                <!--MENUS AND PLACES --
-                <div class="gallery-inner web comunicacion">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-seven" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/menusandplaces.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Comunicación / Software</p>
-                                    <h4>Menus And Places</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/menusandplaces.jpg">
-                </div>
-                <!--end MENUS AND PLACES --
-
-                <!--SAFLOSA --
-                <div class="gallery-inner web">
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-eight" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/real-skin-care.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web</p>
-                                    <h4>SALFOSA</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/real-skin-care.jpg">
-                </div>
-                <!--end SAFLOSA --
-
-                <!--ROVSA --
-                <div class="gallery-inner web fotografia">
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-nine" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/refaccionaria-octavio-vazquez.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Fotografía</p>
-                                    <h4>Refacccionaria Octavio Vázquez</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/refaccionaria-octavio-vazquez.jpg">
-                </div>
-                <!--end ROVSA --
-
-                <!--QAM --
-                <div class="gallery-inner web fotografia">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-ten" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/qam.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Fotografía</p>
-                                    <h4>QAM</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/qam.jpg">
-                </div>
-                <!--end QAM --
-
-                <!--PERCHISA --
-                <div class="gallery-inner web">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-eleven" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/perchisa.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web</p>
-                                    <h4>Perchisa</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/perchisa.jpg">
-                </div>
-                <!--end PERCHISA --
-
-                <!--SONAR BIT --
-                <div class="gallery-inner web comunicacion software fotografia">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-twelve" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/sonar-bit.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Comunicación / Fotografía / Software</p>
-                                    <h4>Sonar Bit</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/sonar-bit.jpg">
-                </div>
-                <!--end SONAR BIT --
-
-                <!--EXPOGAN 2012 --
-                <div class="gallery-inner web comunicacion">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-therteen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/expogan.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Comunicacón</p>
-                                    <h4>Expogan 2012</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/expogan.jpg">
-                </div>
-                <!--end EXPOGAN 2012 --
-
-                <!--ROHI --
-                <div class="gallery-inner web fotografia">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-fourteen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/rohi.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Fotografía</p>
-                                    <h4>ROHI</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/rohi.jpg">
-                </div>
-                <!--end ROHI --
-
-                <!--HER SECRET DREAM --
-                <div class="gallery-inner web fotografia">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-fifteen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/her-secret-dream.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Fotografía</p>
-                                    <h4>Her Secret Dream</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/her-secret-dream.jpg">
-                </div>
-                <!--end HER SECRET DREAM --
-
-                 <!--HAIR STUDIO --
-                <div class="gallery-inner web fotografia">
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-sixteen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/hair-studio.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Fotografía</p>
-                                    <h4>Hair Studio</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/hair-studio.jpg">
-                </div>
-                <!--end HAIR STUDIO --
-                
-                <!--ABRASIVE SOLUTIONS --
-                <div class="gallery-inner web comunicacion">
-                    <!-- caption --
-                    <div class="caption text-center ">
-                        <div class="captionWrapper valign">
-                            <a id="trigger-overlay-seventeen" class="overlay-ajax" href="<?php bloginfo('template_url')?>/proyectos/abrasive-solutions.php" data-toggle="modal" >
-                                <div class="caption-heading">
-                                    <p>Web / Comunicación</p>
-                                    <h4>Abrasive Solutions</h4>
-                                    <div class="btn btn-default">Ver más...</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <img alt="thumbnail" class="galleryImage" src="<?php bloginfo('template_url')?>/img/proyectos/abrasive-solutions.jpg">
-                </div>
-                <!--end ABRASIVE SOLUTIONS -->
             </div>
         </section>
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
