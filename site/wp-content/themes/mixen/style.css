@@ -1205,7 +1205,7 @@ p.bold{
 }
 
 .review{
-    text-align:center;
+    text-align:left;
     padding:40px;
 }
 
@@ -1686,6 +1686,14 @@ line-height: 24px;
     padding-top:10px;
 }
 
+.post-content a {
+    
+}
+
+.post-content a:hover {
+
+}
+
 .post-date p{
     font-size:90%;
     font-style:italic;
@@ -1731,6 +1739,10 @@ line-height: 24px;
 
 .widget ul li a{
     color: #353535;
+}
+
+.widget ul li a:hover{
+    color: #ed1f24;
 }
 
 
