@@ -3,6 +3,7 @@
         <!--/* blog intro SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="blogIntro">
+            <div id="top"></div>
             <div class="container">
                 <!--header-->
                 <div class="row sectionIntro">

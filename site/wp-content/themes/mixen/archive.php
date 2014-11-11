@@ -3,7 +3,7 @@
         <!--/* blog intro SECTION */-->
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="blogIntro">
-
+	    <div id="top"></div>
             <div class="container">
                 <div class="row sectionIntro">
                     <div class="col-md-8 col-md-offset-2 text-center">

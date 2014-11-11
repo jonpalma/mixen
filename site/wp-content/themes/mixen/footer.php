@@ -2,7 +2,7 @@
             <section id="footer" class="dark">
                 <div class="bottomLine text-center">
                     <div class="text-center">
-                    <img src="<?php bloginfo('template_url')?>/img/logo-mixen.png" class="footerLogo center-block" alt="Small Logo" width="100" height="134">
+                    <a  href="#top"><img src="<?php bloginfo('template_url')?>/img/logo-mixen.png" class="footerLogo center-block" alt="Small Logo" width="100" height="134"></a>
                 </div>
 
                    <ul class="footerSocialIcons">
