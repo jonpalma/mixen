@@ -42,7 +42,7 @@
                                     </div>
                                     <div class="post-info">
                                         <div class="postBy">
-                                            <p><?php the_date();?></p>
+                                            <div><?php the_date();?></div>
                                         </div>
                                     </div>
                                     <div class="excerpt">
