@@ -1210,7 +1210,7 @@ p.bold{
 }
 
 
-.review p.titulation{
+.review p.titulation, .review div.titulation{
     color:#c8c8c8;
     font-style:italic;
     font-size:10px;
